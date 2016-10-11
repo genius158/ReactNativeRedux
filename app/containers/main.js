@@ -19,7 +19,7 @@ class Main extends Component {
     return (
       <View>
       <MView
-      str={'nmns'}
+      str={this.props.str}
       handleSetStr={this.handleSetStr}
       />
       </View>
@@ -28,10 +28,11 @@ class Main extends Component {
 
   handleSetStr=()=>{
     this.props.actionSetStr('sdfasdfasdfasdfafsdfsd');
-
-    alert('Main:'+this.props.str);
-
   }
 }
+Main.defaultProps = {
+    str: 'zzzzzzzzzz'
+};
+
 
 export default Main;
