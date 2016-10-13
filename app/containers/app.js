@@ -8,8 +8,6 @@ import {
   View
 } from 'react-native';
 
-let strOut;
-
 class App extends Component {
   constructor(props){
     super(props);
@@ -26,15 +24,15 @@ class App extends Component {
 
 
 const mapStateToProps =(state)=>{
-  alert('mapStateToProps'+state+" "+state.str);
-  const { str } = state;
+  const {setStr}=state;
   return{
-    state
+    str:setStr.str,
   };
 }
 
 const mapDispatchToProps = (dispatch)=>{
-  return bindActionCreators(actionCreators,dispatch);
+  const actions = bindActionCreators(actionCreators,dispatch);
+  return actions;
 }
 
 export default connect( mapStateToProps, mapDispatchToProps )(App)

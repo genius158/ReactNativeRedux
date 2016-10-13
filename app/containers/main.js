@@ -30,9 +30,5 @@ class Main extends Component {
     this.props.actionSetStr('sdfasdfasdfasdfafsdfsd');
   }
 }
-Main.defaultProps = {
-    str: 'zzzzzzzzzz'
-};
-
 
 export default Main;

@@ -9,7 +9,6 @@ export default function setStr(state = initialState, action){
     let st = Object.assign({}, state, {
       str:action.str,
     });
-    alert("setStr:"+st.str);
     return st;
 
     default:
