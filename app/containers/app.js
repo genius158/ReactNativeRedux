@@ -26,7 +26,7 @@ class App extends Component {
 const mapStateToProps =(state)=>{
   const {setStr}=state;
   return{
-    str:setStr.str,
+    str:setStr.data,
   };
 }
 

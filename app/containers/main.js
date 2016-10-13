@@ -27,7 +27,8 @@ class Main extends Component {
   }
 
   handleSetStr=()=>{
-    this.props.actionSetStr('sdfasdfasdfasdfafsdfsd');
+    // this.props.actionSetStr('sdfasdfasdfasdfafsdfsd');
+    this.props.goForBaidu();
   }
 }
 
